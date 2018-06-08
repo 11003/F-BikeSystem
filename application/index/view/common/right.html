@@ -1,0 +1,6 @@
+{volist name="hotRes" id="hotRes"}
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+    <div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="{:url('Article/index',array('artid'=>$hotRes['id']))}" target="_blank"><img src="{$hotRes.pic}" width="83" title="{$hotRes.title}" /></a></div>
+    <div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="{:url('Article/index',array('artid'=>$hotRes['id']))}" target="_blank" title="{$hotRes.title}">{$hotRes.title}</a></div>
+</li>
+{/volist}
